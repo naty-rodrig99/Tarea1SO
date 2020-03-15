@@ -54,7 +54,9 @@ void encryptLetter(char letter){
       printf("%s","999");
   } else if( letter == 'Z' || letter == 'z'){
       printf("%s","9999");
-  } else{
+  } else if( letter == ' '){
+      printf("%s","0");
+  }else{
     printf("%s","Caracter Invalido");
   }
 }
@@ -67,6 +69,7 @@ int main()
    int p;
    printf("Ingrese un string: ");
    scanf ("%s",&str);
+   printf("%d", str);
 
     int repeat, ascii;
 
